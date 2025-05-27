@@ -7,6 +7,7 @@ sites:
     url: https://www.gocarma.com
   - name: GoCarma Server
     url: $P_SITE_1
+    method: POST
     headers:
     - "Authorization: Bearer $P_SECRET_SITE_1"
     - "Content-Type: application/json"
