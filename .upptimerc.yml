@@ -3,10 +3,15 @@ owner: teamcarma # Your GitHub organization or username, where this repository l
 repo: external-upptime # The name of this repository
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
+  - name: GoCarma Website
+    url: https://www.gocarma.com
+  - name: GoCarma Server
+    url: $P_SITE_1
+    headers:
+    - "Authorization: Bearer $P_SECRET_SITE_1"
+    - "Content-Type: application/json"
+    body: '$P_SITE_BODY_1'
+
   - name: Hacker News
     url: https://news.ycombinator.com
   - name: Test Broken Site
@@ -22,10 +27,11 @@ status-website:
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   cname: status.gocarma.com
   # baseUrl: /external-upptime
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is is now eoin the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  #logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
+  logoUrl: https://res.cloudinary.com/avego/image/upload/v1748354751/Carma_Logo_Long_Format_u9vhfv.png
+  name: GoCarma Upptime
+  introTitle: "**Upptime** is an open-source uptime monitor and status page, powered entirely by GitHub."
+  introMessage: This is a status page which uses **real-time** data from our [GitHub repository](https://github.com/teamcarma/external-upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
   navbar:
     - title: Status
       href: /
