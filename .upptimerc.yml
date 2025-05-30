@@ -5,7 +5,7 @@ repo: external-upptime # The name of this repository
 sites:
   - name: GoCarma Website
     url: https://www.gocarma.com
-  - name: GoCarma API Server
+  - name: TEST - GoCarma API Server
     url: $P_SITE_1
     method: POST
     headers:
@@ -13,15 +13,8 @@ sites:
     - "Content-Type: application/json"
     body: '$P_SITE_BODY_1'
     icon: https://res.cloudinary.com/avego/image/upload/v1580811904/favicon_gynpkq.ico
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
-  - name: IPv6 test
-    url: forwardemail.net
-    port: 80
-    check: "tcp-ping"
-    ipv6: true
+  - name: GoCarma Support Site
+    url: https://support.gocarma.com
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
@@ -30,9 +23,9 @@ status-website:
   # baseUrl: /external-upptime
   #logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
   logoUrl: https://res.cloudinary.com/avego/image/upload/v1748354751/Carma_Logo_Long_Format_u9vhfv.png
-  name: GoCarma Upptime
-  introTitle: "**Upptime** is an open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a status page which uses **real-time** data from our [GitHub repository](https://github.com/teamcarma/external-upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  #name: GoCarma Upptime
+  introTitle: "GoCarma services uptime"
+  introMessage: This is a status page which uses **real-time** data from our [GitHub repository](https://github.com/teamcarma/external-upptime).
   navbar:
     - title: Status
       href: /
